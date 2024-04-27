@@ -1,4 +1,5 @@
 import {
+    concatMixedTypesMessage,
     concatMessage,
     multiplierMessage, 
     simpleSumMessage, 
@@ -24,6 +25,11 @@ const concat = (part1, part2) => {
     const concatWithMessage = concatMessage(part1, part2)
     return concatWithMessage;
 }
+
+const concatMix = (string, number) => {
+    const concatMixin = concatMixedTypesMessage(string, number);
+    return concatMixin;
+}
 //function calls
 //use console log => //Write your name as the second param
 //consoleLog(consoleLogMessage, "Jelena");
@@ -32,5 +38,5 @@ const concat = (part1, part2) => {
 //simpleMultiplied(4, 7)
 //simpleMultiplied(1.2, 1.5)
 concat("Hello", "Word");
-
+concatMix("hello", 123);
 

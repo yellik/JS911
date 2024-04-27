@@ -38,6 +38,13 @@ export const simpleSumMessage = (a, b) => {
     well... a:  ${typeof(result)}`);
  }
 
- export const concatArrMessage = () => {
-    
+ export const concatMixedTypesMessage = (string, number) => {
+    const result = string.concat(number);
+    `Wait... so adding two things is not just adding two things. 
+    Also, there is no obvious way to make a space between the words. So,
+    what is it good for? In fact, this is where js starts getting interesting. 
+    Interesting for me at least... What happens if you concat a number with a string?
+    Now, you att ${string} with ${number}. 
+    The result will be ${result}
+    and it is of the type ${typeof(result)}`
  }
