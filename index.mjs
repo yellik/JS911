@@ -1,4 +1,8 @@
-import {multiplierMessage, simpleSumMessage, consoleLogMessage} from "./messages.mjs";
+import {
+    concatMessage,
+    multiplierMessage, 
+    simpleSumMessage, 
+    consoleLogMessage} from "./messages.mjs";
 
 
     //simple console.log
@@ -16,12 +20,17 @@ const simpleMultiplied = (a, b) => {
     return multiplierWithMessage;
 }
 
+const concat = (part1, part2) => {
+    const concatWithMessage = concatMessage(part1, part2)
+    return concatWithMessage;
+}
 //function calls
 //use console log => //Write your name as the second param
-consoleLog(consoleLogMessage, "Jelena");
-simpleSum(simpleSumMessage, -2, 3);
-simpleSum(simpleSumMessage, -2.6, 5.3);
-simpleMultiplied(4, 7)
-simpleMultiplied(1.2, 1.5)
+//consoleLog(consoleLogMessage, "Jelena");
+//simpleSum(simpleSumMessage, -2, 3);
+//simpleSum(simpleSumMessage, -2.6, 5.3);
+//simpleMultiplied(4, 7)
+//simpleMultiplied(1.2, 1.5)
+concat("Hello", "Word");
 
 

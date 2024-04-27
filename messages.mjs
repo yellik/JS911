@@ -25,3 +25,19 @@ export const simpleSumMessage = (a, b) => {
     The result should still be right. 
     The result it ${result}`);
  }
+
+ export const concatMessage = (word1, word2) => {
+    const result = word1.concat(word2)
+    console.log(`It would be preatty boring if you were limited 
+    numbers only. Why not just use a calculator for that? No, JS 
+    is a lot cooler than that. With the "concat" function you can 
+    add A LOT of other things together. In this case, you are putting 
+    two words together. As a result, you get ${result}. But wait,
+    where is the space gone? It literally copies ${word1} and ${word2} together. 
+    But do you know what else it compies? The type. So two string will be...
+    well... a:  ${typeof(result)}`);
+ }
+
+ export const concatArrMessage = () => {
+    
+ }
