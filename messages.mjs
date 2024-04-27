@@ -5,7 +5,8 @@ export const consoleLogMessage = (name) => {
     name and see what happens`)
 }
 export const simpleSumMessage = (a, b) => { 
-    const result = a + b; console.log(`You are adding ${a} to ${b}. 
+    const result = a + b; 
+    console.log(`You are adding ${a} to ${b}. 
     This equals to ${result} This is done through a function call and 
     two parametres - or numbers that is passed in the function. 
     In this case, it is ${a} and ${b}, but you can add any numbers you want, 
@@ -13,3 +14,14 @@ export const simpleSumMessage = (a, b) => {
     You will still get the right. 
     The sum is: ${result}. 
  `)}
+
+ export const multiplierMessage = (a, b) => {
+    const result = a * b;
+    console.log(`You are multiplying ${a} with ${b}.
+    This equals to ${result};
+    This is done through multiplication of the two variable
+    you passed thruugh the function. You can add any numbers you want.
+    You can use floats and negative numbers. Try it out. 
+    The result should still be right. 
+    The result it ${result}`);
+ }
