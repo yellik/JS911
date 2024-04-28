@@ -1,5 +1,7 @@
 import {
     fatCatMessage,
+    makeCatMessage,
+    concatNumObjMessage,
     concatNumMessage,
     concatMessage,
     multiplierMessage, 
@@ -34,6 +36,12 @@ const concatNum = (number1, number2) => {
     //return concatMixin;
 }
 
+const concatNumObj = (number1, number2) => {
+    const makeNumObj = concatNumObjMessage(number1, number2);
+    return makeNumObj;
+}
+
+
 
 const fatCat = (food) => {
     const catStatus = fatCatMessage(food)
@@ -41,7 +49,9 @@ const fatCat = (food) => {
     
 }
 
-const fatCatSortCalories
+const makeCat = (name, age, weight) => {
+    makeCatMessage(name, age, weight)
+}
 //function calls
 //use console log => //Write your name as the second param
 //consoleLog(consoleLogMessage, "Jelena");
@@ -51,7 +61,7 @@ const fatCatSortCalories
 //simpleMultiplied(1.2, 1.5)
 //concat("Hello", "Word");
 //concatNum(1, 3)
-//concatMix("hello", 123);
+//concatNumObj(123, 456);
 
 /*for the switch statement exercise you're going to feed a cat. 
 each item contains a set amount of calories. See the cats hunger level
@@ -60,3 +70,4 @@ by feeding him a food. Use "banana", "apple pie" and "burger"
 //fatCat("banana");
 //fatCat("apple pie");
 //fatCat("burger");
+makeCat("Gizma", 12, 3.5)

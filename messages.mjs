@@ -51,6 +51,19 @@ export const simpleSumMessage = (a, b) => {
     concat with strings and arrays`)
  }
  
+ export const concatNumObjMessage = (number1, number2) => {
+    console.log(`You are passing in two numbers ${number1} and ${number2}
+    As you are unable to split the numbers to turn the into arrays. 
+    You can if you turn them into strings`);
+    const numArr1 = number1.toString().split('');
+    const numArr2 = number2.toString().split('');
+    console.log(`Then we can go ahead and split them. This gives you
+    ${numArr1} and ${numArr2} Now you go ahead and use concat. `);
+    const numObj = numArr1.concat(numArr2);
+    console.log(`This give you ${numObj}, which is of the type: ${typeof(numObj)}`);
+ } 
+
+
  export const fatCatMessage = (food) => {
     console.log(`This function accepts 1 food parametres.
     You are feeding the cat a ${food}`);
@@ -77,3 +90,19 @@ export const simpleSumMessage = (a, b) => {
     
  }
 
+ export const reduceMessage = (number1, number2, number3) => {
+    console.log();
+ }
+ export const makeCatMessage = (name, age, weight) => {
+    const keys = ['name', 'age', 'weight']
+    console.log(`This fn expects to receive three params: ${keys}`);
+    const values = [name, age, weight];
+    console.log(`You have passed the following values ${values}`);
+    
+    const catObject = keys.reduce((obj, key, index) => {
+        return {...obj, [key]: values[index]}
+        }, {});
+    
+    console.log(catObject);
+
+ }
