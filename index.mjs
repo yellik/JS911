@@ -1,4 +1,5 @@
 import {
+    reduceCaloriesMessage,
     fatCatMessage,
     makeCatMessage,
     concatNumObjMessage,
@@ -52,6 +53,10 @@ const fatCat = (food) => {
 const makeCat = (name, age, weight) => {
     makeCatMessage(name, age, weight)
 }
+
+const reduceCalories = (calForFood1, calForFood2, calForFood3) => {
+    reduceCaloriesMessage(calForFood1, calForFood2, calForFood3)
+}
 //function calls
 //use console log => //Write your name as the second param
 //consoleLog(consoleLogMessage, "Jelena");
@@ -70,4 +75,5 @@ by feeding him a food. Use "banana", "apple pie" and "burger"
 //fatCat("banana");
 //fatCat("apple pie");
 //fatCat("burger");
+reduceCalories(233, 556, 104)
 makeCat("Gizma", 12, 3.5)

@@ -90,8 +90,24 @@ export const simpleSumMessage = (a, b) => {
     
  }
 
- export const reduceMessage = (number1, number2, number3) => {
-    console.log();
+ export const reduceCaloriesMessage = (calForFood1, calForFood2, calForFood3) => {
+
+    console.log(`A reduce function takes a allows us to return a value
+    of the whole array. For example, we might want to know how much the cat 
+    eats in total during the day. This might determine whether ot not he 
+    (she, in my case) gets fat over time`);
+
+    const foodCalorieArr = [calForFood1, calForFood2, calForFood3]
+
+    console.log(`In this case, we have logged the calorie count for the foods
+    the cat has eating today. These are: ${calForFood1}, ${calForFood2} and ${calForFood3}.
+    Sorry kitty, but you've got to stay fit!`);
+    const totalCalIntake = foodCalorieArr.reduce((accumulator, currentValue ) => {
+        return accumulator + currentValue;
+    });
+    
+    console.log(`Your kitty has eaten: ${totalCalIntake}`);
+   
  }
  export const makeCatMessage = (name, age, weight) => {
     const keys = ['name', 'age', 'weight']
