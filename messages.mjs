@@ -109,6 +109,22 @@ export const simpleSumMessage = (a, b) => {
     console.log(`Your kitty has eaten: ${totalCalIntake}`);
    
  }
+
+ export const spreadCaloriesMessage = (calForFood1, calForFood2, calForFood3) => {
+    console.log(`Now we know what how much food our kitty is eating in total`);
+    const dailyCalIntake = [calForFood1, calForFood2, calForFood3]
+    console.log(`But what if we wanted to know how these means compare to each other. 
+    For this, we can use spead operator. 
+    Let's descructure (break it down) a bit, 
+    as see what she had for her fist meal.`);
+
+    const[first, ...rest] = dailyCalIntake;    
+
+    const reducedCalorieIntake = dailyCalIntake.reduce((accomulator, currentValue) => accomulator + currentValue);
+    console.log(`Now we know that she had ${first} for breakkie. 
+    Compared to ${reducedCalorieIntake} it's quite a heavy load.
+    Might need to get easy on the breakkie! `);
+ }
  export const makeCatMessage = (name, age, weight) => {
     const keys = ['name', 'age', 'weight']
     console.log(`This fn expects to receive three params: ${keys}`);
