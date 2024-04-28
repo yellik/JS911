@@ -51,4 +51,29 @@ export const simpleSumMessage = (a, b) => {
     concat with strings and arrays`)
  }
  
+ export const fatCatMessage = (food) => {
+    console.log(`This function accepts 1 food parametres.
+    You are feeding the cat a ${food}`);
+    let totalCal = 0;
+    console.log(`at this stage, the cat has eaten ${totalCal} calories.
+    We just started feeding him, so that makes sense`);
+    
+    switch(food){
+        case "banana":
+            totalCal += 100;
+            break;
+        case "apple pie":
+            totalCal += 250;
+            break;
+        case "burger":
+            totalCal += 500;
+            break;
+    }
+    console.log(`now the cat has eaten his ${food} and his total
+    intale is: ${totalCal}. This funtion therefore returns:`);
+    if(totalCal <= 100) return "The cat is still hungry"; 
+    if(totalCal <= 250 ) return "The cat could eat more";
+    if(totalCal <= 500 ) return "the cat is full";
+    
+ }
 

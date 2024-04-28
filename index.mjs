@@ -1,5 +1,5 @@
 import {
-    concatMixedTypesMessage,
+    fatCatMessage,
     concatNumMessage,
     concatMessage,
     multiplierMessage, 
@@ -34,10 +34,14 @@ const concatNum = (number1, number2) => {
     //return concatMixin;
 }
 
-const switchIt = (banana, ) => {
 
+const fatCat = (food) => {
+    const catStatus = fatCatMessage(food)
+    console.log(catStatus)
+    
 }
 
+const fatCatSortCalories
 //function calls
 //use console log => //Write your name as the second param
 //consoleLog(consoleLogMessage, "Jelena");
@@ -49,4 +53,10 @@ const switchIt = (banana, ) => {
 //concatNum(1, 3)
 //concatMix("hello", 123);
 
-//
+/*for the switch statement exercise you're going to feed a cat. 
+each item contains a set amount of calories. See the cats hunger level
+by feeding him a food. Use "banana", "apple pie" and "burger"
+*/
+//fatCat("banana");
+//fatCat("apple pie");
+//fatCat("burger");
