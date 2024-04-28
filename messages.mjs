@@ -27,24 +27,28 @@ export const simpleSumMessage = (a, b) => {
  }
 
  export const concatMessage = (word1, word2) => {
-    const result = word1.concat(word2)
+    const result = word1.concat(" ", word2)
     console.log(`It would be preatty boring if you were limited 
     numbers only. Why not just use a calculator for that? No, JS 
     is a lot cooler than that. With the "concat" function you can 
     add A LOT of other things together. In this case, you are putting 
-    two words together. As a result, you get ${result}. But wait,
-    where is the space gone? It literally copies ${word1} and ${word2} together. 
-    But do you know what else it compies? The type. So two string will be...
-    well... a:  ${typeof(result)}`);
+    two words together. As a result, you get ${result}. In this case, 
+    it also copies the type. Two strings together is...
+    well a  ${typeof(result)}`);
  }
 
- export const concatMixedTypesMessage = (string, number) => {
-    const result = string.concat(number);
-    `Wait... so adding two things is not just adding two things. 
-    Also, there is no obvious way to make a space between the words. So,
-    what is it good for? In fact, this is where js starts getting interesting. 
-    Interesting for me at least... What happens if you concat a number with a string?
-    Now, you att ${string} with ${number}. 
-    The result will be ${result}
-    and it is of the type ${typeof(result)}`
+ export const concatNumMessage = (number1, number2) => {
+    const num1String = number1.toString();
+    const num2String = number2.toString();
+    const result = num1String.concat(num2String);
+   console.log ( `using concat on number displays a different result. You get: ${result}.
+   In this case, you are trying to put two numbers together. This won't work. 
+   It works in this case, because we actually turned them into strings. 
+    So the number1 which originally is ${typeof(number1)} becomes a ${typeof(num1String)} 
+    and number2, which originally is ${typeof(number2)} becomes ${typeof(num2String)}
+    resulting to the type: ${typeof(result)}. 
+    This gives us a lot of interesting features donw the line, but for now, let's only use
+    concat with strings and arrays`)
  }
+ 
+
